@@ -1,5 +1,5 @@
 import connectDB from "../../../utils/connectDB";
-import User from "../../../models/User";
+import User from '../../../components/models/User';
 import { hashPassword } from "../../../utils/auth";
 
 async function handler(req, res) {
