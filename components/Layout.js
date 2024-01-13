@@ -19,7 +19,7 @@ function Layout({children}) {
                 </li>
                 <li>
                     <BiMessageSquareAdd/>
-                    <Link href="/">Add todo</Link>
+                    <Link href="/add-todo">Add todo</Link>
                 </li>
                 <li>
                     <RxDashboard/>
