@@ -35,6 +35,16 @@ res.status(201).json({status:"success", message:"todo saved in user todos"});
 }else if (req.method==="GET"){
 const sortedData=sortTodos(user.todos);
 res.status(200).json({status:"success", data:sortedData}); 
+}else if(req.method==="PATCH"){
+  const {id,status}=req.body;
+  if (!id || !status) {
+    return res.status(402).json({status:"filed",message:"Invalid Data"})
+   }
+   const result=await User.updateOne({"todos._id":id},{$set:{"todos.$.status":status}});
+   console.log(result);
+   res.status(200).json({status:"success",massage:"update todo success"})
+  }
+
 }
 
 }
