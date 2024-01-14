@@ -318,12 +318,21 @@ button {
   align-items: center;
 }
 
-.tasks .tasks__card div .button-next {
+.tasks .tasks__card div  {
   background-color: #cdf8ee;
   color: #03ab81;
 }
 
-.tasks .tasks__card div .button-back {
+.button-next {
+  background-color: #cdf8ee;
+  color: #03ab81;
+}
+.button-back {
+  background-color: #f8eccf;
+  color: #e5a000;
+}
+
+.tasks .tasks__card div  {
   background-color: #f8eccf;
   color: #e5a000;
 }
